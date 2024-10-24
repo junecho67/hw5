@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+</head>
+<body>
+
+    <h1>Product List</h1>
+
+    <pre id="jsonDisplay"></pre>
+
+    <script>
+        // Global JSON variable
+        var productsJSON = {
+            "products": [
+                {
+                    "name": "Vintage T-shirt",
+                    "description": "Tie-die Polo T-shirt",
+                    "price": 35,
+                    "categories": ["clothing"]
+                },
+                {
+                    "name": "Bluetooth Speaker",
+                    "description": "Portable wireless speaker from JBL",
+                    "price": 55,
+                    "categories": ["electronics"]
+                },
+                {
+                    "name": "Ceramic Mug",
+                    "description": "Hand-painted ceramic coffee mug",
+                    "price": 15,
+                    "categories": ["kitchen", "handmade"]
+                },
+                {
+                    "name": "Handmade Apron",
+                    "description": "Hand-sewn kitchen apron",
+                    "price": 25,
+                    "categories": ["kitchen", "handmade"]
+                },
+                {
+                    "name": "Pink Wallet",
+                    "description": "Leather bi-fold wallet in pink",
+                    "price": 40,
+                    "categories": ["clothing", "accessories"]
+                },
+                {
+                    "name": "iPhone7 Case",
+                    "description": "Silicone phone case in red for iPhone7",
+                    "price": 20,
+                    "categories": ["electronics", "accessories"]
+                },
+                {
+                    "name": "Noise Cancelling Headphones",
+                    "description": "Over-ear wireless headphones with active noise cancellation",
+                    "price": 120,
+                    "categories": ["electronics"]
+                },
+                {
+                    "name": "Yoga Mat",
+                    "description": "Eco-friendly non-slip yoga mat",
+                    "price": 30,
+                    "categories": ["fitness", "wellness"]
+                },
+                {
+                    "name": "Foam Roller",
+                    "description": "High-density foam roller for fitness and recovery",
+                    "price": 25,
+                    "categories": ["fitness", "wellness"]
+                },
+                {
+                    "name": "LED Desk Lamp",
+                    "description": "Adjustable LED desk lamp with touch controls",
+                    "price": 45,
+                    "categories": ["electronics"]
+                }
+            ]
+        };
+
+        // Convert JSON object to string
+        var productsJSONString = JSON.stringify(productsJSON, null, 2);
+
+        // Display the JSON string in the <pre> tag
+        document.getElementById('jsonDisplay').textContent = productsJSONString;
+    </script>
+
+</body>
+</html>

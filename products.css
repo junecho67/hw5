@@ -1,0 +1,107 @@
+/* Title */
+title {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0 30px 0;
+    color: #6d3294;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Background color */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Product data */
+product {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #6d3294;
+    background-color: #f8f9fa; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+product:hover {
+    transform: translateY(-5px); /* Lift effect when hover */
+    background-color: #6d3294; 
+    color: #ffffff; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Making sure all text inherits the hover color */
+product:hover name,
+product:hover description,
+product:hover price,
+product:hover categories category {
+    color: #ffffff; 
+}
+
+/* Product name */
+name {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333; 
+    margin-bottom: 10px;
+}
+
+/* Description */
+description {
+    display: block;
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+/* Price */
+price {
+    display: block;
+    color: #6d3294;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Add Dollar Sign*/
+price:before {
+    content: "$";
+}
+
+/* Categories */
+categories {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Category tags */
+category {
+    display: inline-block;
+    background-color: #ddbdf2; 
+    color: #333333; 
+    padding: 5px 12px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 20px; 
+    font-size: 12px;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+category:hover {
+    background-color: #6d3294; 
+    color: #ffffff; 
+}
+
+/* On hover background also change */
+product:hover category {
+    background-color: #ad42f5;
+}
